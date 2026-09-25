@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lana Del Rey | A Journey Through Her Music</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <a class="logo" href="#home">Lana Del Rey</a>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#live">Live</a>
+        <a href="#albums">Albums</a>
+        <a href="#about">About</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <img src="images/nfr.webp" alt="" class="hero-bg">
+      <div class="hero-content">
+        <p class="eyebrow">A journey through her music</p>
+        <h1>Lana Del Rey</h1>
+        <p>From sun-bleached Americana to string-drenched heartbreak, Lana Del Rey has carved a unique path in the music world. Explore her albums, live moments, and the stories behind the songs that have defined a generation.</p>
+      </div>
+    </section>
+
+    <section class="section widgets" id="live">
+      <p class="eyebrow">Right now</p>
+      <h2>Live &amp; Counting</h2>
+      <div class="widget-grid">
+        <div class="widget-card">
+          <p class="widget-label">Current time</p>
+          <p class="clock" id="live-clock">--:--:--</p>
+        </div>
+        <div class="widget-card">
+          <p class="widget-label">Countdown to Lana's birthday (June 21)</p>
+          <div class="countdown" id="countdown">
+            <div><span id="cd-days">00</span><small>Days</small></div>
+            <div><span id="cd-hours">00</span><small>Hrs</small></div>
+            <div><span id="cd-mins">00</span><small>Min</small></div>
+            <div><span id="cd-secs">00</span><small>Sec</small></div>
+          </div>
+        </div>
+        <div class="widget-card">
+          <p class="widget-label">Feeling something?</p>
+          <button class="button" id="mood-btn" type="button">Get a mood</button>
+          <p class="mood-output" id="mood-output"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="albums">
+      <p class="eyebrow">The discography</p>
+      <h2>Albums</h2>
+      <p class="intro">Click an album to see selected tracks.</p>
+      <div class="album-grid">
+        <article class="album-card" data-album="born-to-die"><img src="images/born to die.webp" alt="Born to Die cover"><h3>Born to Die</h3><p class="year">2012</p></article>
+        <article class="album-card" data-album="paradise"><img src="images/Paradise.jpg" alt="Paradise cover"><h3>Paradise</h3><p class="year">2012</p></article>
+        <article class="album-card" data-album="ultraviolence"><img src="images/ultraviolence.jpg" alt="Ultraviolence cover"><h3>Ultraviolence</h3><p class="year">2014</p></article>
+        <article class="album-card" data-album="honeymoon"><img src="images/honeymoon.jpg" alt="Honeymoon cover"><h3>Honeymoon</h3><p class="year">2015</p></article>
+        <article class="album-card" data-album="chemtrails"><img src="images/chemtrails.webp" alt="Chemtrails Over the Country Club cover"><h3>Chemtrails Over the Country Club</h3><p class="year">2021</p></article>
+        <article class="album-card" data-album="tunnel"><img src="images/tunnel.webp" alt="Did You Know That There's a Tunnel Under Ocean Blvd cover"><h3>Did You Know That There's a Tunnel Under Ocean Blvd</h3><p class="year">2023</p></article>
+      </div>
+    </section>
+
+    <section class="featured section">
+      <img src="images/nfr.webp" alt="Norman Fucking Rockwell! album cover">
+      <div>
+        <p class="eyebrow">Featured album</p>
+        <h2>Norman Fucking Rockwell!</h2>
+        <p class="year">2019</p>
+        <p>Her defining record trades orchestral sweep for piano, dry wit, and long unspooling verses.
+          Widely hailed by critics as a modern American classic, it marked a high point in her collaborative
+          work with producer Jack Antonoff and earned a Grammy nomination for Album of the Year.</p>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <p class="eyebrow">The artist</p>
+      <h2>About Lana</h2>
+      <p>Since <em>Born to Die</em> in 2012, Lana Del Rey has built a catalogue around America as a place of promise and ruin, love as devotion and danger, and fame as a gilded trap.
+      She rose to global prominence in 2011 with the viral success of her breakthrough single "Video Games," followed by her music frequently blends baroque pop, dream pop, and trip-hop with references to mid-century Hollywood, tragic romance, and vintage pop culture.   Over the years,
+      her songwriting and production have evolved across acclaimed records including Ultraviolence (2014), Norman Fucking Rockwell! (2019), and Did You Know That There's a Tunnel Under Ocean Blvd (2023),
+      cementing her status as one of the most influential alternative-pop artists of her generatio</p>
+      <a href="https://en.wikipedia.org/wiki/Lana_Del_Rey" target="_blank" rel="noopener noreferrer">Read more on Wikipedia</a>
+    </section>
+  </main>
+
+  <div class="modal-backdrop" id="modal-backdrop" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" id="modal-close" type="button" aria-label="Close">&times;</button>
+      <p class="year" id="modal-year"></p>
+      <h2 id="modal-title"></h2>
+      <p id="modal-desc"></p>
+      <ol id="modal-tracklist"></ol>
+    </div>
+  </div>
+
+  <footer class="footer">&copy; <span id="year"></span> Lana Del Rey</footer>
+  <script src="script.js"></script>
+</body>
+</html>
